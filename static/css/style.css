@@ -2,6 +2,7 @@
 :root{
     --fuente-principal: 'Spartan', sans-serif;
     --fuente-secundaria: 'Open Sans', sans-serif;
+    --casi-negro: rgb(10, 1, 20);
     --violeta: rgba(154,67,240,1);
 }
 
@@ -11,6 +12,9 @@
     letter-spacing: .10em;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,8 +58,14 @@ table {
 	border-spacing: 0;
 }
 
+.navbar-brand i{
+    color: #fff;
+    text-shadow:
+    0 0 5px var(--violeta),
+    0 0 10px var(--violeta);
+}
 #landing-main{
-    background-color: rgb(10, 1, 20);
+    background-color: var(--casi-negro);
     height: 95vh;
     display: flex;
     align-items: center;
@@ -67,6 +77,7 @@ table {
     font-weight: bolder;
     font-size: 5em;
     font-family: var(--fuente-principal);
+    
 }
 .typing {
     width: 29ch;
@@ -81,7 +92,6 @@ table {
 
 .fade-in{
     animation: FadeIn 7s;
-   
 }
 
 @keyframes typing {
@@ -106,8 +116,95 @@ table {
     }
 }
 
-#landing-buton > a > i{
-    margin-top:200px;
-    color: var(--violeta);
+#landing-button a i{
+    color: #fff;
+    text-shadow:
+    0 0 4px #fff,
+    0 0 6px #fff,
+    0 0 38px var(--violeta),
+    0 0 78px var(--violeta),
+    0 0 80px var(--violeta),
+    0 0 81px var(--violeta); 
 }
 
+#landing-button a i:hover{
+    color: #fff;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 7px #fff,
+    0 0 38px var(--violeta),
+    0 0 80px var(--violeta),
+    0 0 95px var(--violeta),
+    0 0 105px var(--violeta); 
+}
+
+.espaciador{
+    height:5vh;
+}
+
+#sobre-mi{
+    height: 100vh;
+    background-image: url(/static/images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#sobre-mi-inner{
+    background-color: var(--casi-negro);
+    height: 75vh;
+    width: 75vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 8px var(--violeta);
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "imagen bio";
+    position: relative;
+}
+
+.sobre-mi-image{
+    background-image: url(/static/images/yo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    grid-area: "imagen";
+    height: 75vh;
+}
+
+.sobre-mi-bio{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: "bio";
+    height: 75vh;
+}
+
+.sobre-mi-bio h1{
+    font-family: var(--fuente-principal);
+    color: var(--violeta);
+    font-size: 2em;
+    border-bottom: 2px solid --violeta;
+}
+.sobre-mi-bio p{
+    font-family: var(--fuente-secundaria);
+    line-height: 1.6;
+    max-width: 35ch;
+    font-size: 1.6em;
+}
+.sobre-mi-bio button{
+    max-width: 12ch;
+    font-size: 1.6em;
+}
+.sobre-mi-bio i{
+
+    font-size: 2em;
+}
