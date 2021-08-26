@@ -17,23 +17,24 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/static/css/style.css">
     <!-- JS/JQuery -->
-    <link rel="stylesheet" href="/static/js/main.js">
+    <script src="/static/js/main.js"></script>
 
-    <title>Emanuel Amerio Portafolio</title>
+    <title>Portafolio - Emanuel Amerio</title>
   </head>
   <body>
    
     <section id="landing">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#"><i class="fas fa-code"></i></a>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <a class="navbar-brand" href="#"><i class="fas fa-code fa-2x"></i></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="#">Sobre mi<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Portafolio</a>
-                <a class="nav-item nav-link" href="#">Contacto</a>
+                <a class="nav-item nav-link" href="#proyectos">Portafolio</a>
+                <a class="nav-item nav-link" href="#certificados">Certificados</a>
+                <a class="nav-item nav-link" href="#contacto">Contacto</a>
               </div>
             </div>
           </nav>
@@ -43,7 +44,7 @@
                 <div class="col-md-12 text-white">
                     <h1>Emanuel</h1>
                     <h1 class="text-right fade-in" style="color:var(--violeta);">Amerio</h1>
-                    <h2 class="typing">Desarrollador web Full-stack.</h2>
+                    <h2 class="typing">Desarrollador web Full-stack</h2>
                 </div>
             </div>
                            
@@ -54,43 +55,220 @@
             </div>
         </div>
     </section>
-    <div class="container-fluid espaciador"></div>
     
-    <section class="container-fluid" id="sobre-mi">
-      <div class="row" id="sobre-mi-inner">
-        <div class="col sobre-mi-image">
+    <div class="container-fluid espaciador"></div>
+
+    <div class="container-fluid" id="sobre-mi">
+      <div class="container"id="sobre-mi-inner">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="text-white sobre-mi-bio">
+                <h1>SOBRE MI</h1>
+                <p class="">Hola! Mi nombre es <span style="color:var(--violeta);">E</span>manuel, tengo 29 años y me apasiona programar.<br>Me dedico al desarrollo web full-stack, creación de apps bellas, modernas y eficientes; integración de bases de datos y diseño UX/UI.<br> Contactame!</p>
+                <a href="#proyectos">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Portafolio
+                </a>  
+                <div class="sobre-mi-social fade-in">
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="far fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container-fluid espaciador"></div>
+
+    <div class="container-fluid habilidades">
+      <div class="row" style="min-height: 30vh; box-shadow: 0 0 15px var(--violeta);">
+        <div class="col-md-3 text-center back-end">
+          <i class="fab fa-python fa-4x fade-in-from-left"><p>Python</p></i>
+          <i class="fab fa-js fa-4x fade-in-from-left"><p>JavaScript</p></i>
         </div>
-        <div class="col text-white sobre-mi-bio">
-          <h1>SOBRE MI</h1>
-          <p>Hola! Mi nombre es <span style="color:var(--violeta);"> E</span>manuel, tengo 29 años y me apasiona programar.<br>Me dedico al desarrollo web full-stack, creación de apps modernas y eficientes, integración de bases de datos y diseño de interfaces de usuario UX/UI bellas y elegantes.<br> Contactame!</p>
-          <button>Portafolio</button>
-          <div class="d-flex text-white">
-            <i class="fab fa-github"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-instagram"></i>
+
+        <div class="col-md-3 text-center front-end">
+          <i class="fab fa-html5 fa-4x fade-in-from-left"><p>Html5</p></i>
+          <i class="fab fa-css3-alt fa-4x fade-in-from-left"><p>Css3</p></i>    
+        </div>
+        
+        <div class="col-md-3 text-center back-end">
+          <img class="fade-in-from-right" src="https://img.icons8.com/ios-filled/150/ffffff/flask.png"/>
+          <i class="fab fa-node fa-5x fade-in-from-right"></i>
+        </div>
+
+        <div class="col-md-3 text-center front-end">
+          <i class="fab fa-angular fa-4x fade-in-from-right"><p>Angular</p></i>
+          <i class="fab fa-react fa-4x fade-in-from-right"><p>React</p></i>
+        </div>  
+  
+      </div>
+    </div>
+    
+    <div class="container-fluid espaciador"></div>
+
+    <h1 class="titular text-center mb-5" id="proyectos">Proyectos destacados</h1>
+
+    <div class="container-fluid" id="portfolio">
+      <div class="card-container"> 
+
+        <div class="card">
+          <video src="/static/images/JB.mp4" autoplay loop playsinline muted></video>
+          <div class="descriptions">
+            <h1>Julis Bakery Landing Page.</h1>
+            <p>Proyecto simple de front-end para emprendimiento de pastelería, utilizando Html5/CSS3/Bootstrap.</p>
+            <a target="_blank" href="https://emarose.github.io/JulisBakery/"><button class="mx-3"><i class="fab fa-github fa-2x"></i>Visitar</button></a>
+            <a target="_blank" href="https://github.com/emarose/JulisBakery"><button><i class="far fa-file-code fa-2x"></i>Code</button></a>
+          </div>
+        </div>  
+
+        <div class="card">
+          <video src="/static/images/RCH.mp4" autoplay loop playsinline muted></video>
+          <div class="descriptions">
+            <h1>Rose CoffeeHouse Landing Page.</h1>
+            <p>Proyecto simple de front-end para emprendimiento de cafetería, utilizando Html5/CSS3/Bootstrap.</p>
+            <a href="https://emarose.github.io/RoseCoffeeHouse/"><button class="mx-3"><i class="fab fa-github fa-2x"></i>Visitar</button></a>
+            <a href="https://github.com/emarose/RoseCoffeeHouse"><button><i class="far fa-file-code fa-2x"></i>Code</button></a>
           </div>
         </div>
-          
+
+        <div class="card">
+          <video src="/static/images/RCH.mp4" autoplay loop playsinline muted></video>
+          <div class="descriptions">
+            <h1>Aplicación de Gestión Comercial.</h1>
+            <p>App para gestionar productos, ventas, insumos y clientes, utilizando Python/Flask y Html/CSS/JS</p>
+            <a href="#"><button class="mx-3 mt-3"><i class="fab fa-github fa-2x"></i>Visitar</button></a>
+            <a href="#"><button><i class="far fa-file-code fa-2x"></i>Code</button></a>
+          </div>
         </div>
-    </section>
 
-    <section>
+      </div>
+    </div>
+
+    <div class="container-fluid espaciador-bg"></div>
+
+    <h1 class="text-center titular mb-5">Mis certificados</h1>
+
+    <div class="container-fluid" id="certificados">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="/static/images/placeholder.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+        <div class="col-md-3">
+          <img src="/static/images/placeholder.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+      
+        <div class="col-md-3">
+          <img src="/static/images/placeholder.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+        <div class="col-md-3">
+          <img src="/static/images/placeholder.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
         
-    </section>
-    <section>
-        
-    </section>
+            <div class="numbertext">1 / 4</div>
+            <img src="/static/images/placeholder.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="/static/images/placeholder.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="/static/images/placeholder.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="/static/images/placeholder.png" style="width:100%">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid espaciador-bg"></div>
 
+    <h1 class="text-center titular mb-5">Contactame</h1>
 
+    <div class="container-fluid text-white" id="contacto">
+      <div class="row">
+        <div class="col-md-6 contacto-form">
+          <div class="container">
+            <div class=" text-center mt-4 ">
+            <h1 class="mb-3">Dejame tu mensaje!</h1>
+        </div>
+        <div class="row ">
+            <div class="col-lg-7 mx-auto">
+                <div class="card mt-2 mx-auto p-4 bg-light">
+                    <div class="card-body bg-light">
+                        <div class="container">
+                            <form id="contact-form" role="form">
+                                <div class="controls">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group p-3"> <label for="form_name">Nombre *</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Nombre" required="required" data-error="Firstname is required."> </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group p-3"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required" data-error="Valid email is required."> </div>
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group p-3"> <label for="form_message">Mensaje *</label> <textarea id="form_message" name="message" class="form-control" placeholder="Escribe tu mensaje..." rows="4" required="required" data-error="Please, leave us a message."></textarea> </div>
+                                        </div>
+                                        <div class="col-md-12"> <input type="submit" class="btn btn-success btn-send pt-2 btn-block" value="Enviar"> </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div> <!-- /.8 -->
+            </div> <!-- /.row-->
+        </div>
+    </div>
+        </div>
+        <div class="col-md-6 contacto-encontrame">
+          <h2>Podés encontrarme en:</h2>
+          <div class="row">
+            <a href="#"><i class="fab fa-linkedin fa-3x"></i><p>Linkedin</p></a>
+            <a href="#"><i class="fab fa-github fa-3x"></i><p>Github</p></a>
+            <a href="#"><i class="far fa-envelope fa-3x"></i><p>Email</p></a>
+            <a href="#"><i class="fas fa-mobile-alt fa-3x"></i><p>Teléfono</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="container-fluid espaciador"></div>
 
-
-
-
-
-
-
-
+    <div class="footer text-left">
+      <h1>Sitio creado por Emanuel Amerio.</h1>
+      <a href="#landing"><p>Inicio</p></a>
+      <a href="#sobre-mi"><p>Sobre mi</p></a>
+      <a href="#portfolio"><p>Proyectos</p></a>
+      <a href="#certificados"><p>Certfificados</p></a>
+      <a href="#contacto"><p>Contacto</p></a>
+    </div>
+    </div>
+   
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
